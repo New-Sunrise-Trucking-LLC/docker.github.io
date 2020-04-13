@@ -1,0 +1,306 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Launch (web)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/bin/Debug/<target-framework>/<project-name.dll>",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "^\\s*Now listening on:\\s+(https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)",
+            "request": "launch",
+            "mainClass": ""
+        },
+        {},
+
+
+        {
+            "files.autoSave": "afterDelay",
+            "editor.formatOnSave": true,
+            "workbench.startupEditor": "none",
+            "files.watcherExclude": {
+                "*/.git/objects/*": true,
+                "*/.git/subtree-cache/*": true,
+                "*/node_modules//**": true,
+                "editor.fontFamily": "Droid Sans Mono, Droid Sans Fallback"
+            },
+            "files.associations": {
+                "Dockerfile-*": "dockerfile",
+                "dockerfile-*": "dockerfile"
+            },
+            "typescript.preferences.importModuleSpecifier": "relative",
+            "git.enableSmartCommit": true,
+            "javascript.updateImportsOnFileMove.enabled": "never",
+            "explorer.confirmDragAndDrop": false,
+            "explorer.confirmDelete": false,
+            "typescript.updateImportsOnFileMove.enabled": "always",
+            "tslint.autoFixOnSave": true,
+            "eslint.autoFixOnSave": true,
+            "git.confirmSync": false,
+            "git.autofetch": true,
+            "git.fetchOnPull": true,
+            "editor.tabSize": 4,
+            "editor.insertSpaces": true,
+            "html.format.wrapLineLength": 150,
+            "html.format.wrapAttributes": "aligned-multiple",
+            "html.format.preserveNewLines": true,
+            "html.format.maxPreserveNewLines": null,
+            "html.format.endWithNewline": true,
+            "files.insertFinalNewline": true,
+            "prettier.bracketSpacing": true,
+            "prettier.jsxSingleQuote": true,
+            "prettier.tabWidth": 4,
+            "prettier.disableLanguages": [
+                "sql",
+                "SQL",
+                "Dockerfile",
+                "dockerfile"
+            ],
+            "[sql]": {
+                "editor.formatOnSave": false
+            },
+            "[dockerfile]": {
+                "editor.formatOnSave": false
+            },
+            "prettier.arrowParens": "avoid",
+            "prettier.endOfLine": "auto",
+            "prettier.htmlWhitespaceSensitivity": "css",
+            "prettier.jsxBracketSameLine": false,
+            "prettier.proseWrap": "preserve",
+            "prettier.semi": true,
+            "prettier.singleQuote": true,
+            "prettier.printWidth": 150,
+            "prettier.useTabs": false,
+            "prettier.trailingComma": "all",
+            "todohighlight.isEnable": true,
+            "todohighlight.keywords": [
+                {
+                    "text": "TODO",
+                    "color": "white",
+                    "backgroundColor": "green"
+                }
+            ],
+            "window.zoomLevel": 0,
+            "editor.minimap.enabled": true,
+            "breadcrumbs.enabled": true,
+            "workbench.iconTheme": "vscode-icons",
+            "files.eol": "auto",
+            "files.defaultLanguage": "js",
+            "files.encoding": "utf8",
+            "vsicons.projectDetection.disableDetect": true,
+            "terminal.integrated.rendererType": "dom",
+            // "terminal.integrated.shell.windows": "wsl.exe"
+            // "terminal.integrated.shellArgs.windows": ""
+        }
+        { 
+            "compilerOptions": { 
+                "module": "commonjs", 
+                "target": "esnext", 
+                "moduleResolution": "node", 
+                "types": ["reflect-metadata"], 
+                "emitDecoratorMetadata": true, 
+                "experimentalDecorators": true, 
+                "sourceMap": true, 
+                "outDir": "./dist", 
+                "declaration": true, 
+                "declarationMap": true, 
+                "noImplicitAny": false, 
+                "removeComments": true, 
+                "noLib": false, 
+                "allowSyntheticDefaultImports": true, 
+                "esModuleInterop": true, 
+                "importHelpers": true, 
+                "downlevelIteration": true, 
+                "strict": true, 
+                "strictPropertyInitialization": false, 
+                "alwaysStrict": true, 
+                "charset": "utf8", 
+                "newLine": "LF", 
+                "noFallthroughCasesInSwitch": true, 
+                "noImplicitReturns": true, 
+                "noUnusedLocals": true, 
+                "pretty": true, 
+                "resolveJsonModule": true, 
+                "strictBindCallApply": true, 
+                "strictNullChecks": true, 
+                "skipLibCheck": true 
+            }, 
+            "include": ["src/**/*"], 
+            "exclude": ["node_modules"] 
+        } 
+        
+        {
+            "bracketSpacing": true,
+            "jsxSingleQuote": true,
+            "tabWidth": 4,
+            "arrowParens": "avoid",
+            "endOfLine": "auto",
+            "htmlWhitespaceSensitivity": "css",
+            "jsxBracketSameLine": false,
+            "proseWrap": "preserve",
+            "semi": true,
+            "singleQuote": true,
+            "printWidth": 160,
+            "useTabs": false,
+            "trailingComma": "all"
+        }
+        
+        {
+            "name": "Launch test package",
+            "type": "go",
+            "request": "launch",
+            "mode": "test",
+            "program": "${workspaceFolder}"
+        },
+        "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\""
+        {
+            "watch": ["src"],
+            "ext": "ts",
+            "ignore": ["src/**/*.spec.ts"],
+            "exec": "tsc && node --inspect=0.0.0.0 dist/main.js"
+        }
+        
+        {
+            "version": "0.2.0",
+            "configurations": [
+                {
+                    "type": "node",
+                    "request": "attach",
+                    "name": "Attach NodeJS Process",
+                    "address": "localhost",
+                    "port": 9229
+                },
+                {
+                    "name": "Debug NodeJS Typescript",
+                    "type": "node",
+                    "request": "launch",
+                    "sourceMaps": true,
+                    "protocol": "inspector",
+                    "internalConsoleOptions": "openOnSessionStart", // move to debug console when tasks done
+                    "console": "internalConsole", // use vscode console
+                    "runtimeArgs": ["--nolazy", "-r", "ts-node/register"], // ts-node
+                    "cwd": "workspaceRoot", // root dir
+                    "args": ["workspaceRoot/src/main.ts"] // main file
+                }
+            ]
+        }
+        
+        {
+            "type": "extensionHost",
+            "request": "launch",
+            "name": "Launch Extension",
+            "runtimeExecutable": "${execPath}",
+            "args": [
+                "--extensionDevelopmentPath=${workspaceFolder}"
+            ],
+            "outFiles": [
+                "${workspaceFolder}/out/**/*.js"
+            ],
+            "preLaunchTask": "npm"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch via NPM",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run-script",
+                "debug"
+            ],
+            "port": 9229,
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
+        {
+            "name": "Launch Package",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}"
+        },
+        {
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/bin/Debug/<target-framework>/<project-name.dll>",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "internalConsole",
+            "pipeTransport": {
+                "pipeCwd": "${workspaceFolder}",
+                "pipeProgram": "enter the fully qualified path for the pipe program name, for example '/usr/bin/ssh'",
+                "pipeArgs": [],
+                "debuggerPath": "enter the path for the debugger on the target machine, for example ~/vsdbg/vsdbg"
+            }
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command:pickRemoteProcess}",
+            "pipeTransport": {
+                "pipeCwd": "${workspaceFolder}",
+                "pipeProgram": "enter the fully qualified path for the pipe program name, for example '/usr/bin/ssh'",
+                "pipeArgs": [],
+                "debuggerPath": "enter the path for the debugger on the target machine, for example ~/vsdbg/vsdbg"
+            }
+        },
+        {
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/bin/Debug/<target-framework>/<project-name.dll>",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "internalConsole",
+            "pipeTransport": {
+                "pipeCwd": "${workspaceFolder}",
+                "pipeProgram": "enter the fully qualified path for the pipe program name, for example '/usr/bin/ssh'",
+                "pipeArgs": [],
+                "debuggerPath": "enter the path for the debugger on the target machine, for example ~/vsdbg/vsdbg"
+            }
+        },
+        {
+            "name": "Launch Package",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}"
+        },
+        {
+            "name": "(Windows) Launch",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "enter program name, for example ${workspaceFolder}/a.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false
+        }
+    ]
+}
